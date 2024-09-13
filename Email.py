@@ -8,8 +8,7 @@ import email.message
 
 def enviar_email():
 corpo_email = """
-<p>Parágrafo1</p>
-<p>Parágrafo2</p>
+<p>Digite aqui o corpo do email ou coloque uma variável para trazer informações do banco de dados</p>
 """
 
 msg = email.message.Message()
@@ -20,7 +19,7 @@ password = 'senha' #COLE AQUI A SENHA DO SEU EMAIL
 msg.add_header('Content-Type', 'text/html')
 msg.set_payload(corpo_email )
 
-s = smtplib.SMTP('smtp.gmail.com: 587') #aqui será adicionado o smtp do gmail,hotmail (cada um possui um diferente)
+s = smtplib.SMTP('smtp.gmail.com: 587') # aqui é adicionado o smtp do gmail ou hotmail (Cada um possui configurações diferentes. Qualquer dúvida veja no Readme)
 s.starttls()
 # Login Credentials for sending the mail
 s.login(msg['From'], password)
