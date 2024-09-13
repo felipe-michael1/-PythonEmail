@@ -4,7 +4,7 @@ Funciona nos seguintes clientes de e-mail:
 - Outlook
 - Gmail
 
-DOCUMENTAÇÃO PARA ADICIONAR PORTAS (OUTLOOK):
+<strong>DOCUMENTAÇÃO PARA ADICIONAR PORTAS (OUTLOOK):</strong>
 
 Se você quiser adicionar sua conta do Outlook.com para outro programa de email que ofereça suporte a POP ou IMAP, aqui estão as configurações manuais do servidor necessárias.
 
