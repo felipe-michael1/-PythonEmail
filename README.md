@@ -90,3 +90,65 @@ Configuração de cliente IMAP:
 Servidor IMAP: imap.gmail.com
 Porta: 993
 Método de criptografia: SSL/TLS
+
+<hr />
+
+Python class for sending emails. Simple email sending class that can be placed in any Python project. Works on the following email clients:
+
+Outlook
+Gmail
+DOCUMENTATION FOR ADDING PORTS (OUTLOOK):
+
+If you want to add your Outlook.com account to another email program that supports POP or IMAP, here are the manual server settings required.
+
+Notes:
+
+POP & IMAP access is disabled by default. See the section below on how to enable POP or IMAP access in Outlook.com. Outlook.com requires the use of modern Auth/OAuth2. Basic auth is in the process of being deprecated from the Outlook.com service. Incoming and outgoing servers are the same.
+
+Username:
+
+Your email address
+
+Password:
+
+Your Microsoft account password. If your password isn't being recognized, or if you want to add your Outlook.com account to a smart device like a home security camera, you may need an app password. Learn how to add your Outlook.com account to another email app or smart device.
+
+IMAP Server: outlook.office365.com
+
+IMAP Port: 993
+
+IMAP Encryption:
+
+SSL/TLS Authentication Method: OAuth2/Modern Auth
+
+POP Server Name: outlook.office365.com
+
+POP Server: POP Port: 995
+
+POP Encryption: SSL/TLS
+
+Authment Method: OAuth2/Modern Auth
+
+SMTP Server Name: smtp-mail.outlook.com
+
+SMTP Port: 587
+
+SMTP Encryption: STARTTLS
+
+Authment Method: OAuth2/Modern Auth
+
+DOCUMENTATION FOR ADDING PORTS (GMAIL):
+
+POP Client Configuration:
+
+Open Gmail on your computer. In the top right corner, click Settings Settings and then See all settings. Click the Forwarding and POP/IMAP tab. In the "POP Download" section, select Enable POP for all mail or Enable POP for mail arriving from now on. At the bottom of the page, click Save Changes.
+
+Then, make the changes to your class:
+
+Incoming mail server (POP): pop.gmail.com Requires SSL: Yes Port: 995
+
+Outgoing mail server (SMTP) smtp.gmail.com Requires SSL: Yes Requires TLS: Yes (if available) Requires authentication: Yes Port for TLS/STARTTLS: 587
+
+IMAP client configuration:
+
+IMAP server: imap.gmail.com Port: 993 Encryption method: SSL/TLS
