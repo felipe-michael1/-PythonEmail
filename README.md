@@ -97,7 +97,8 @@ Python class for sending emails. Simple email sending class that can be placed i
 
 Outlook
 Gmail
-DOCUMENTATION FOR ADDING PORTS (OUTLOOK):
+
+<strong>DOCUMENTATION FOR ADDING PORTS (OUTLOOK):</strong>
 
 If you want to add your Outlook.com account to another email program that supports POP or IMAP, here are the manual server settings required.
 
@@ -137,7 +138,7 @@ SMTP Encryption: STARTTLS
 
 Authment Method: OAuth2/Modern Auth
 
-DOCUMENTATION FOR ADDING PORTS (GMAIL):
+<strong>DOCUMENTATION FOR ADDING PORTS (GMAIL):</strong>
 
 POP Client Configuration:
 
