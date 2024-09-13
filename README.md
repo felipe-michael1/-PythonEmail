@@ -60,3 +60,33 @@ STARTTLS
 
 Método de Autenticação:
 OAuth2/Modern Auth
+
+<strong>DOCUMENTAÇÃO PARA ADICIONAR PORTAS (GMAIL):</strong>
+
+Configuração de cliente POP:
+
+Abra o Gmail no computador.
+No canto superior direito, clique em Configurações Configurações e Ver todas as configurações.
+Clique na guia Encaminhamento e POP/IMAP.
+Na seção "Download POP", selecione Ativar POP para todos os e-mails ou Ativar POP para e-mails que chegarem a partir de agora.
+Na parte inferior da página, clique em Salvar alterações.
+
+Depois, faça as alterações em sua classe:
+
+Servidor de recebimento de e-mails (POP):	
+pop.gmail.com
+Requer SSL: Sim
+Porta: 995
+
+Servidor de envio de e-mails (SMTP)	
+smtp.gmail.com
+Requer SSL: Sim
+Requer TLS: Sim (se disponível)
+Requer autenticação: sim
+Porta para TLS/STARTTLS: 587
+
+Configuração de cliente IMAP:
+
+Servidor IMAP: imap.gmail.com
+Porta: 993
+Método de criptografia: SSL/TLS
